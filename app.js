@@ -30,7 +30,7 @@ app.use((error,req, res, next) => {
 
 mongoose.connect('mongodb+srv://adipra:e1GJ05hs2vkudhPM@cluster0.nubzj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology:true})
 .then(() => {
-    app.listen(process.env.PORT || 4000, () => console.log('Connect success'));
+    app.listen(process.env.PORT || 4001, () => console.log('Connect success'));
 })
 .catch(err => console.log(err));
 
